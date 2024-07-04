@@ -23,7 +23,7 @@ locals {
 ################################################################################
 
 module "vpc" {
-  source = "https://github.com/ashok-r-s/terraform-aws-vpc/tree/main/modules/vpc-endpoints"
+  source = "https://github.com/ashok-r-s/terraform-aws-vpc/modules/vpc-endpoints"
 
   name = local.name
   cidr = local.vpc_cidr
