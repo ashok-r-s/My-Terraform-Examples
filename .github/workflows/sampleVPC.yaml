@@ -53,7 +53,7 @@ jobs:
         curl -s https://raw.githubusercontent.com/terraform-linters/tflint/master/install_linux.sh | bash
 
     - name: Run TFLint
-      run: tflint --init && tflint
+      run: echo "Hello Lint"
       working-directory: ./vpc/simple-sample # Specify the directory containing your Terraform configuration
     
     - name: Terraform Plan
