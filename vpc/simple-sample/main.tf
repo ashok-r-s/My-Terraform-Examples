@@ -23,7 +23,7 @@ locals {
 ################################################################################
 
 module "vpc" {
-  source = "git::https://github.com/ashok-r-s/terraform-aws-vpc.git"
+  source = "git::https://github.com/ashok-r-s/terraform-aws-vpc.git?ref=main"
 
   name = local.name
   cidr = local.vpc_cidr
